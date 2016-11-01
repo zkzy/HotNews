@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HotNews</string>
+    <string name="str_setting">设置</string>
+    <string name="str_about">关于</string>
+    <string name="str_scan">扫一扫</string>
+    <string name="str_add">添加</string>
+    <string name="draw_desc">draw_desc</string>
+</resources>
