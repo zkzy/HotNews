@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="dismiss"
+    >
+<LinearLayout
+    android:transitionName="@string/translation_fab_login"
+    android:background="@drawable/dialog_background"
+    android:layout_gravity="center"
+    android:layout_marginRight="36dp"
+    android:layout_marginLeft="36dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="请登陆"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <FrameLayout
+        android:id="@+id/actions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="SINGUP"
+            android:textColor="@color/colorAccent"
+            android:onClick="signup"
+            style="?android:borderlessButtonStyle" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:enabled="false"
+            android:text="LOGIN"
+
+            android:onClick="doLogin" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+</FrameLayout>

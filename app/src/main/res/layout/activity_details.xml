@@ -7,7 +7,7 @@
     >
 
     <android.support.design.widget.CoordinatorLayout
-
+        android:transitionName="@string/layout"
         android:id="@+id/root_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,20 +19,28 @@
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsingToolbarLayout"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:expandedTitleMarginStart="64dp"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
-                <ImageView
+                <cn.cook.hotnews.FourThreeImageView
+                android:background="#fff5f5f5"
+                    android:id="@+id/image"
+                    android:foreground="@drawable/mid_grey_ripple"
+                    android:transitionName="@string/image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:src="@drawable/a"
+
+
                     app:layout_collapseMode="parallax"
                     app:layout_collapseParallaxMultiplier="0.7"/>
 
                 <android.support.v7.widget.Toolbar
+
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
@@ -52,6 +60,7 @@
         </android.support.design.widget.AppBarLayout>
 
         <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">

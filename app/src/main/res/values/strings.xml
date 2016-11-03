@@ -5,4 +5,7 @@
     <string name="str_scan">扫一扫</string>
     <string name="str_add">添加</string>
     <string name="draw_desc">draw_desc</string>
+    <string name="translation_fab_login">translation_fab_login</string>
+    <string name="image">image</string>
+    <string name="layout">layout</string>
 </resources>
